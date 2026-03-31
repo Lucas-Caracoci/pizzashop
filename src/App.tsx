@@ -1,9 +1,15 @@
 import { RouterProvider } from 'react-router-dom'
 
 import { router } from './routes'
+import { ThemeProvider } from './components/theme/theme-provider'
 
 
 
 export function App() {
-  return <RouterProvider router={router} />
+  return (
+    <ThemeProvider storageKey='pizzashop-theme'>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+
+  )
 }
