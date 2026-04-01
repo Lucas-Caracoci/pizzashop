@@ -5,7 +5,7 @@ import { PageTitle } from '@/components/page-title'
 export function Dashboard() {
   return (
     <>
-      <PageTitle title="Dashboard" />
+      <PageTitle title="Inicio" />
 
       <div className="space-y-3">
         <h1 className="text-2xl font-semibold">Dashboard</h1>

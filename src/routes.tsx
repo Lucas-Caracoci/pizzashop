@@ -6,6 +6,7 @@ import { Dashboard } from '@/pages/app/dashboard'
 import { SignIn } from '@/pages/auth/sign-in'
 import { NotFound } from '@/pages/not-found'
 import { SignUp } from './pages/auth/sign-up'
+import { Orders } from './pages/app/orders/orders'
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Dashboard />,
+      },
+      {
+        path: '/orders',
+        element: <Orders />,
       },
     ],
   },
